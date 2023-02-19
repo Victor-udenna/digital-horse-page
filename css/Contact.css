@@ -12,6 +12,7 @@
 }
 
 .form_container{
+    width: 52%;
     padding: 1.5rem;
     box-shadow: -10px 11px 23px rgb(0 0 0 / 25%);
     border-radius: 2rem;
@@ -40,6 +41,7 @@ input[type="text"], input[type="email"], input[type="tel"] {
 
 .textarea{
     height: 200px;
+    width: 100% !important;
 }
 
 label span{
