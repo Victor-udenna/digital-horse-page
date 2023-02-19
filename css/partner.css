@@ -1,17 +1,23 @@
-/* .form_container{
-    flex-basis: 70%;
-} */
+.form_container{
+    margin-left: 2.2rem;
+}
 
 
 .form_header{
     font-weight: 500;
     font-size: 18px;
+    padding-bottom: 1.7rem;
+}
+
+.form_img{
+    width: 100%;
+    margin: 0;
 }
 .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 4rem 0;
+    padding: 4rem 3rem;
 }
 
  .input_container, .sub_container{
@@ -68,6 +74,7 @@ input[type="text"], input[type="email"], input[type="tel"] {
 aside{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding: .7rem 3rem;
 }
 
 .aside_component{

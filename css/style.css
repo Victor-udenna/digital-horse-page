@@ -6,7 +6,7 @@ body{
 }
 
 /* Begining o nav style */
-.nav_bar{
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,6 +36,10 @@ body{
 .nav_list a{
     text-decoration: none;
     color: white;
+}
+
+#active{
+    color: #205BA9;
 }
 
 .submit_button{
