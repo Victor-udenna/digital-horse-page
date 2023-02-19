@@ -2,12 +2,11 @@
     display: flex;
     align-items: start;
     justify-content: space-between;
-    padding: 11rem 4rem 3rem 4rem;
+    padding: 11rem 4rem 7rem 4rem;
 
 }
 
 .header_text{
-    /* padding-top: 2.5rem; */
     font-size: 36px;
     color: #4B99FF;
 }
@@ -28,6 +27,11 @@
     gap: 10px;
     width: 100%;
     padding-bottom: 30px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    height: 40px;
+    padding-left: 10px;
 }
 
 .name{
