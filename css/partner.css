@@ -26,8 +26,8 @@
   gap: 10px;
 }
 
-.sub_container{
-    align-items: center;
+.sub_container {
+  align-items: center;
 }
 
 .input_container {
@@ -37,7 +37,8 @@
   padding-bottom: 30px;
 }
 
-.name, .vehicle {
+.name,
+.vehicle {
   width: 97.3%;
 }
 
@@ -45,7 +46,6 @@
   gap: 30px;
   align-items: center;
 }
-
 
 label span {
   color: red;
