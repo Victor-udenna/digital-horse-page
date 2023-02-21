@@ -15,6 +15,8 @@ let companyAstheric = document.querySelector(".companyAstheric");
 let vehicleBrandAstheric = document.querySelector(".vehiclebrandAstheric");
 let Vehicle_noAstheric = document.querySelector(".vehicle_noAstheric");
 
+let modal = document.querySelector("#modal_container");
+
 function asterikColor(element, asteriskName) {
   element.addEventListener("input", function () {
     if (element.value.length > 2) {
@@ -35,9 +37,8 @@ asterikColor(vehicleBrand, vehicleBrandAstheric);
 // Phone number validation
 PhoneNumber.addEventListener("input", (e) => {
   e.target.value = e.target.value.replace(/[^\d]/g, "").trim();
-  if (PhoneNumber.value.length === 11) {
+  if (PhoneNumber.value.length === 11 || PhoneNumber.value.length === 13) {
     PhoneAstheric.style.color = "#00FF00";
-    console.log(PhoneNumber.value.length);
   } else {
     PhoneAstheric.style.color = "#FF0000";
   }
@@ -59,7 +60,31 @@ vehicle_no.addEventListener("input", function () {
   }
 });
 
+const displayModal = (element) => {
+  element.style.display = "block";
+};
+
 const SubmitDetails = (e) => {
   e.preventDefault();
+  if (
+    (firstName.value.length > 2 &&
+      lastName.value.length > 2 &&
+      PhoneNumber.value.length === 11) ||
+    PhoneNumber.value.length === 13
+  ) {
+    if (
+      companyName.value.length > 2 &&
+      email.value.length > 3 &&
+      email.value.includes("@") &&
+      vehicleBrand.value.length > 2 &&
+      vehicle_no.value > 0
+    ) {
+      displayModal(modal);
+    } else {
+      console.log("error");
+    }
+  } else {
+    console.log("error");
+  }
 };
 Button.addEventListener("click", SubmitDetails);

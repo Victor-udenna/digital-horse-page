@@ -14,20 +14,22 @@
     />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="logo_container">
-        <a href="/index.html">
-          <img src="../images/logo.png" class="logo" />
-        </a>
-      </div>
+    <header>
+      <nav class="navbar">
+        <div class="logo_container">
+          <a href="/index.html">
+            <img src="../images/logo.png" class="logo" />
+          </a>
+        </div>
 
-      <ul class="nav_list">
-        <a href="../src/Partner_with_us.html">Partner with us</a>
-        <a href="../src/Shuttle_service.html">Shuttle service</a>
-        <a href="../src/Hire_us.html">Hire us</a>
-        <a href="../src/Contact.html" id="active">Contact Us</a>
-      </ul>
-    </nav>
+        <ul class="nav_list">
+          <a href="../src/Partner_with_us.html">Partner with us</a>
+          <a href="../src/Shuttle_service.html">Shuttle service</a>
+          <a href="../src/Hire_us.html">Hire us</a>
+          <a href="../src/Contact.html" id="active">Contact Us</a>
+        </ul>
+      </nav>
+    </header>
 
     <main>
       <section class="container">
@@ -36,9 +38,11 @@
             <div>
               <h1 class="header_text">Contact Us</h1>
               <p class="label">
-                Semper tellus, tellus at eu platea lorem est a amet tincidunt
+                Kindly call any of contact service numbers or fill the form
+                below.
                 <br />
-                nulla orci vulputate tellus felis.
+                All enquiries, complaints and feedbacks will be treated by our
+                team swiftly
               </p>
             </div>
             <img
@@ -62,13 +66,23 @@
                   <label for="first_name">
                     First name <span class="firstName_astheric">*</span>
                   </label>
-                  <input id="first_name" type="text" class="name" />
+                  <input
+                    id="first_name"
+                    type="text"
+                    class="name"
+                    placeholder="John"
+                  />
                 </div>
                 <div class="input_container">
                   <label for="last_name">
                     Last name <span class="lastName_astheric">*</span>
                   </label>
-                  <input id="last_name" type="text" class="name" />
+                  <input
+                    id="last_name"
+                    type="text"
+                    class="name"
+                    placeholder="Doe"
+                  />
                 </div>
               </div>
 
@@ -76,28 +90,33 @@
                 <label for="phone"
                   >Phone Number <span class="phone_astheric">*</span></label
                 >
-                <input id="phone" type="tel" />
+                <input id="phone" type="tel" placeholder="08088774365" />
               </div>
 
               <div class="input_container">
                 <label for="mail"
                   >Email Adress <span class="email_astheric">*</span></label
                 >
-                <input id="mail" type="email" />
+                <input id="mail" type="email" placeholder="joahdoe@gmail.com" />
               </div>
 
               <div class="input_container">
                 <label for="subject"
                   >Subject <span class="subject_astheric">*</span></label
                 >
-                <input id="subject" type="text" />
+                <input id="subject" type="text" placeholder="" />
               </div>
 
               <div class="input_container">
                 <label for="Message"
                   >Message <span class="message_astheric">*</span></label
                 >
-                <textarea id="Message" class="textarea"> </textarea>
+                <textarea
+                  id="Message"
+                  class="textarea"
+                  placeholder="type your message"
+                >
+                </textarea>
               </div>
 
               <div>
@@ -179,6 +198,25 @@
         </div>
       </div>
     </footer>
+
+    <div id="modal_container">
+      <div class="modal">
+        <div class="modal_imgcontainer">
+          <img src="../images/logo.png" alt="logo" />
+        </div>
+
+        <div class="modal_text_container">
+          <h3 class="modal_header">Message sent Succesfully.</h3>
+          <p class="modal_text">We will get back to you in a bit. Thank you</p>
+        </div>
+        <div>
+          <a href="../index.html">
+            <button class="modal_button">continue</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
     <script src="../js/Contact.js"></script>
   </body>
 </html>

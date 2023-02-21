@@ -51,13 +51,13 @@
                   <label for="first_name">
                     First name <span class="name_astheric">*</span>
                   </label>
-                  <input id="first_name" type="text" class="name" />
+                  <input id="first_name" type="text" class="name"  placeholder="John"/>
                 </div>
                 <div class="input_container">
                   <label for="last_name">
                     Last name <span class="Last_nameastheric">*</span>
                   </label>
-                  <input id="last_name" type="text" class="name" />
+                  <input id="last_name" type="text" class="name" placeholder="Doe" />
                 </div>
               </div>
 
@@ -65,21 +65,21 @@
                 <label for="phone"
                   >Phone Number <span class="phoneAstheric">*</span></label
                 >
-                <input id="phone" type="tel" />
+                <input id="phone" type="tel" placeholder="08089334732"/>
               </div>
 
               <div class="input_container">
                 <label for="company_name"
                   >Company Name <span class="companyAstheric">*</span></label
                 >
-                <input id="company_name" type="text" />
+                <input id="company_name" type="text" placeholder="Muiautos" />
               </div>
 
               <div class="input_container">
                 <label for="mail"
                   >Email Adress <span class="emailAstheric">*</span></label
                 >
-                <input id="mail" type="email" />
+                <input id="mail" type="email" placeholder="johndoe@gmail.com"/>
               </div>
 
 
@@ -93,14 +93,14 @@
                       >Vehicle Brand
                       <span class="vehiclebrandAstheric">*</span></label
                     >
-                    <input id="vehicle_brand" type="text" />
+                    <input id="vehicle_brand" type="text"  placeholder="Toyota" />
                   </div>
            
 
 
                 <div class="input_container">
                     <label class="" for="vehicle_no">How many vehicles <span class="vehicle_noAstheric">*</span></label>
-                  <input id="vehicle_no" type="number" value="0" />
+                  <input id="vehicle_no" type="number" value="0" placeholder="2" />
                   
                 </div>
               </div>
@@ -229,6 +229,30 @@
           </div>
         </div>
       </footer>
+
+
+      <div id="modal_container">
+        <div class="modal">
+          <div class="modal_imgcontainer">
+            <img src="../images/logo.png" alt="logo"/>
+          </div>
+    
+          <div class="modal_text_container">
+            <h3 class="modal_header">Submitted Succesfully.</h3>
+            <p class="modal_text">We will get back to you in a bit. Thank you</p>
+          </div>
+  <div>
+  <a href="../index.html">
+    <button class="modal_button">
+      continue
+    </button>
+  </a>
+  </div>
+        </div>
+         </div>
+
+
+      
     <script src="../js/Partner.js"></script>
   </body>
 </html>
