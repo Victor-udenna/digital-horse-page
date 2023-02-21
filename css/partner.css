@@ -26,6 +26,10 @@
   gap: 10px;
 }
 
+.sub_container{
+    align-items: center;
+}
+
 .input_container {
   flex-direction: column;
   gap: 10px;
@@ -33,24 +37,15 @@
   padding-bottom: 30px;
 }
 
-.name {
+.name, .vehicle {
   width: 97.3%;
 }
 
-.brand_container,
 .amenities_container {
   gap: 30px;
   align-items: center;
 }
 
-.brand {
-  width: 60px;
-  height: 60px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 label span {
   color: red;
@@ -74,7 +69,8 @@ input {
 
 input[type="text"],
 input[type="email"],
-input[type="tel"] {
+input[type="tel"],
+input[type="number"] {
   height: 40px;
   padding-left: 10px;
 }
