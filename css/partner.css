@@ -1,107 +1,114 @@
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 11rem 4rem 7rem 4rem;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11rem 4rem 7rem 4rem;
 }
 
-.form_container{
-    margin-left: 2.2rem;
+.form_container {
+  margin-left: 2.2rem;
 }
 
-
-.form_header{
-    font-weight: 500;
-    font-size: 18px;
-    padding-bottom: 1.7rem;
+.form_header {
+  font-weight: 500;
+  font-size: 18px;
+  padding-bottom: 1.7rem;
 }
 
-.form_img{
-    width: 100%;
-    margin: 0;
+.form_img {
+  width: 100%;
+  margin: 0;
 }
 
-
- .input_container, .sub_container{
-    display: flex;
-    gap: 10px;
+.input_container,
+.sub_container {
+  display: flex;
+  gap: 10px;
 }
 
-.input_container{
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    padding-bottom: 30px;
+.input_container {
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  padding-bottom: 30px;
 }
 
-.name{
-    width: 97.3%;
+.name {
+  width: 97.3%;
 }
 
-.brand_container, .amenities_container{
-    gap: 30px;
-    align-items: center;
+.brand_container,
+.amenities_container {
+  gap: 30px;
+  align-items: center;
 }
 
-.brand{
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.brand {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-label span{
-    color: red;
+label span {
+  color: red;
 }
 
-label, .label{
-    font-weight: 500;
-    font-size: 14px;
+label,
+.label {
+  font-weight: 500;
+  font-size: 14px;
 }
 
-.label{
-    font-size: 17px;
-    padding-bottom: 10px;
+.label {
+  font-size: 17px;
+  padding-bottom: 10px;
 }
 
-input{
-    border-radius: 7px;
-    border: 2px solid  #383838;
+input {
+  border-radius: 7px;
+  border: 2px solid #383838;
 }
 
-input[type="text"], input[type="email"], input[type="tel"] {
-    height: 40px;
-    padding-left: 10px;
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  height: 40px;
+  padding-left: 10px;
 }
 
 /* Aside styling */
 
-aside{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: .7rem 3rem;
+aside {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0.7rem 3rem;
 }
 
-.aside_component{
-    display: flex;
-    align-items: center; 
-    gap: 10px;
-    margin-bottom: 3rem;
+.aside_component {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 3rem;
 }
 
-.icon_container{
-    background-color: #205BA9;
-    padding: 10px;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
- display: flex;
- justify-content: center;
- align-items: center;
+.icon_container {
+  background-color: #205ba9;
+  padding: 10px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.icon{
-    width: 35px;
+.icon {
+  width: 35px;
+}
+
+span {
+  color: red;
 }
