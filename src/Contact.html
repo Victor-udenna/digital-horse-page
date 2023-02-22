@@ -199,23 +199,44 @@
       </div>
     </footer>
 
-    <div id="modal_container">
-      <div class="modal">
+    <div id="success_modal_container">
+      <div class="modal success_modal">
         <div class="modal_imgcontainer">
-          <img src="../images/logo.png" alt="logo" />
+          <img src="../images/logo.png" alt="logo"/>
         </div>
-
+  
         <div class="modal_text_container">
-          <h3 class="modal_header">Message sent Succesfully.</h3>
-          <p class="modal_text">We will get back to you in a bit. Thank you</p>
+          <h3 class="modal_header success_modal_header">Submitted Succesfully.</h3>
+          <p class="modal_text success_modal_text">We will get back to you in a bit. Thank you</p>
         </div>
-        <div>
-          <a href="../index.html">
-            <button class="modal_button">continue</button>
-          </a>
-        </div>
+<div>
+<a href="../index.html">
+  <button class="modal_button success_button">
+    Continue
+  </button>
+</a>
+</div>
       </div>
-    </div>
+       </div>
+
+
+       <div id="error_modal_container">
+        <div class="error_modal modal">
+          <div class="modal_imgcontainer">
+            <img src="../images/exclamation-triangle-fill.svg" alt="logo"/>
+          </div>
+    
+          <div class="modal_text_container">
+            <h3 class="modal_header error_modal_header">Not submitted</h3>
+            <p class="modal_text error_modal_text">Input necessary details</p>
+          </div>
+  <div>
+    <button class="modal_button error_button">
+      Close
+    </button>
+  </div>
+        </div>
+         </div>
 
     <script src="../js/Contact.js"></script>
   </body>

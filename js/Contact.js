@@ -13,7 +13,13 @@ let emailAstheric = document.querySelector(".email_astheric");
 let subjectAstheric = document.querySelector(".subject_astheric");
 let messageAstheric = document.querySelector(".message_astheric");
 
-let modal = document.querySelector("#modal_container");
+let Success_modal = document.querySelector("#success_modal_container");
+let error_Modal = document.getElementById("error_modal_container");
+let close_errorModal = document.querySelector(".error_button");
+
+close_errorModal.addEventListener('click', ()=>{
+  error_Modal.style.display = "none";
+})
 
 function asterikColor(element, asteriskName) {
   element.addEventListener("input", function () {
@@ -34,7 +40,6 @@ PhoneNumber.addEventListener("input", (e) => {
   e.target.value = e.target.value.replace(/[^\d]/g, "").trim();
   if (PhoneNumber.value.length === 11 || PhoneNumber.value.length === 13) {
     PhoneAstheric.style.color = "#00FF00";
-    console.log(PhoneNumber.value.length);
   } else {
     PhoneAstheric.style.color = "#FF0000";
   }
@@ -66,13 +71,13 @@ const SubmitDetails = (e) => {
       subject.value.length > 2 &&
       Message.value.length > 1
     ) {
-      displayModal(modal);
+      displayModal(Success_modal);
     } else {
-      console.log("no condition 2");
+      displayModal(error_Modal);
     }
-    console.log("yes condition 1");
+   
   } else {
-    console.log("no condition 1");
+    displayModal(error_Modal);
   }
 };
 Button.addEventListener("click", SubmitDetails);

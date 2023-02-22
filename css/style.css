@@ -100,7 +100,7 @@ footer img {
 
 /* Modal style */
 
-#modal_container {
+#success_modal_container, #error_modal_container {
   background-color: rgba(0, 0, 0, 0.36);
   position: fixed;
   z-index: 1;
@@ -137,17 +137,38 @@ footer img {
 }
 
 .modal_header {
-  color: #091729;
   font-size: 1.4rem;
   padding-bottom: 10px;
 }
 
-.modal_button {
-  background-color: #3bb3e2;
-  color: white;
+
+
+.success_modal{
+color: #091729;
+}
+
+.error_modal{
+  color: rgb(143, 0, 0);
+}
+
+.modal_button{
   font-weight: 600;
   padding: 12px 30px;
   border: 0;
   border-radius: 15px;
   cursor: pointer;
+  color: white;
+  
+}
+
+.success_button{
+  background-color: #3bb3e2;
+}
+
+.error_button{
+background-color: rgb(255, 34, 34);
+}
+
+.error_modal{
+  background-image: linear-gradient(0deg, #ff5d5d, white);
 }

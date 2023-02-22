@@ -15,7 +15,15 @@ let companyAstheric = document.querySelector(".companyAstheric");
 let vehicleBrandAstheric = document.querySelector(".vehiclebrandAstheric");
 let Vehicle_noAstheric = document.querySelector(".vehicle_noAstheric");
 
-let modal = document.querySelector("#modal_container");
+let Success_modal = document.querySelector("#success_modal_container");
+let error_Modal = document.getElementById("error_modal_container");
+let close_errorModal = document.querySelector(".error_button");
+
+close_errorModal.addEventListener('click', ()=>{
+  error_Modal.style.display = "none";
+})
+
+
 
 function asterikColor(element, asteriskName) {
   element.addEventListener("input", function () {
@@ -79,12 +87,12 @@ const SubmitDetails = (e) => {
       vehicleBrand.value.length > 2 &&
       vehicle_no.value > 0
     ) {
-      displayModal(modal);
+      displayModal(Success_modal);
     } else {
-      console.log("error");
+      displayModal(error_Modal)
     }
   } else {
-    console.log("error");
+    displayModal(error_Modal)
   }
 };
 Button.addEventListener("click", SubmitDetails);
